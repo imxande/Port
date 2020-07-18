@@ -7,8 +7,8 @@ const PokemonList = () => {
 
   useEffect(() => {
     axios
-      .get("https://pokeapi.co/api/v2/evolution-chain/?limit=20&offset=20")
-      .then((response) => console.log(response))
+      .get("https://pokeapi.co/api/v2/pokemon?offset=20&limit=20")
+      .then((response) => console.log(response.data.results))
       .catch((error) => console.log(error));
   }, []);
 
