@@ -1,15 +1,13 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import PokemonList from "./components/PokemonList";
-import PokemonCard from "./components/PokemonCard";
+import { Route } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <header>
-        <PokemonList />
-      </header>
+      <h1>Pokedex</h1>
+      <Route exact path="/" component={PokemonList} />
     </div>
   );
 }
