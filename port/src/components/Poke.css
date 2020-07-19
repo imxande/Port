@@ -7,3 +7,14 @@
     text-align: center;
     margin: 20px auto;
 }
+
+.link {
+    margin: 10px;
+    color: azure;
+}
+
+.link:hover {
+    text-decoration: none;
+    color: bisque;
+} 
+
