@@ -7,7 +7,7 @@ const Navegation = () => {
   return (
     <div>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="#home">Pokemon</Navbar.Brand>
+        <Navbar.Brand href="/">Pokemon</Navbar.Brand>
         <Nav className="navbar-nav ml-auto">
           <Link className="link" to="/">
             Home
