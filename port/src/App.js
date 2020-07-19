@@ -1,15 +1,16 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import PokemonList from "./components/PokemonList";
-import PokemonCard from "./components/PokemonCard";
+import Home from "./components/Home";
+import Navegation from "./components/Navegation";
+import { Route } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <header>
-        <PokemonList />
-      </header>
+      <Navegation />
+      <Route exact path="/" component={Home} />
+      <Route path="/list" component={PokemonList} />
     </div>
   );
 }
